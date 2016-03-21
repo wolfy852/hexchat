@@ -50,7 +50,7 @@ static int mpc_tell(char *word[], char *word_eol[], void *userdata){
        
        tTitle = g_new(char, 1024);
        GetWindowText(hwnd, tTitle, 1024);
-       zero = strstr (tTitle, " - Media Player Classic");
+       zero = tTitle;
 	   if (zero != NULL)
 	   {
 		   zero[0] = 0;
